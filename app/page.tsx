@@ -290,7 +290,7 @@ function MembersPage({
   
       try {
         const charRes = await fetch(
-          "/api/character-info?name=" + encodeURIComponent(subName)
+          "/api/character-info?name=" + encodeURIComponent(name)
         );
         const charData = await charRes.json();
   
