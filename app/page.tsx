@@ -374,7 +374,7 @@ function MembersPage({
         const oldSubs = member.subCharacters || [];
 
         const isDuplicate = oldSubs.some(
-          (sub) => sub.name === subCharacter.name
+          (sub: any) => sub.name === subCharacter.name
         );
         
         if (isDuplicate) {
